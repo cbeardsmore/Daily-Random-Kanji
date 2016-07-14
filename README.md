@@ -16,13 +16,19 @@ The Kanji list in *kanji.txt* was compiled from the following list:
 
 The range of Kanji displayed can be modified by altering the numeric value after "RANDOM" in the command line to the following values:
 
-- Grade 1 $$\rightarrow$$ 81
-- Grade 2 $$\rightarrow$$ 241
-- Grade 3 $$\rightarrow$$ 441
-- Grade 4 $$\rightarrow$$ 641
-- Grade 5 $$\rightarrow$$ 828
-- Grade 6 $$\rightarrow$$ 1009
-- Secondary $$\rightarrow$$ 2139
+<center>
+
+| Grade | Value  |
+|:-:|:-:|
+| 1 | 81 |
+| 2 | 241 |
+| 3 | 441 |
+| 4 | 641 |
+| 5 | 828 |
+| 6 | 1009 |
+| S | 2139 |
+
+</center>
 
 The current version lists ID, the kanji and it's meaning. The japanese reading can be added by adding a new *div* to both the *render* and *update* methods
 
