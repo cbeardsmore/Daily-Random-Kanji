@@ -1,4 +1,4 @@
-# Daily-Random-Kanji
+# Daily Random Kanji
 
 <center>
   <img src="https://github.com/cbeardsmore/Daily-Random-Kanji/blob/master/screenshot.png?raw=true" alt="Screenshot">
