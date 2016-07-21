@@ -11,7 +11,7 @@
 # SECONDARY/ALL = 2139
 
 command:
-    " sed -n \"$((RANDOM%2139))p\" \"./Daily-Random-Kanji.widget/kanji.txt\" "
+    " sed -n \"$((RANDOM%2139))p\" \"./Daily-Random-Kanji/Daily-Random-Kanji.widget/kanji.txt\" "
 
 # Update is called daily
 refreshFrequency: "1d"
@@ -19,8 +19,8 @@ refreshFrequency: "1d"
 # CSS styling
 style: """
     top: 0px
-    top: 13%
-    right: 12%
+    top: 15%
+    right: 1%
     font-family: Helvetica
     background-color rgba(black, 0.5)
     padding 8px
