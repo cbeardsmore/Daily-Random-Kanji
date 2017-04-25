@@ -5,11 +5,8 @@
 </center>
 
 A widget made for [Übersicht](http://tracesof.net/uebersicht/) using _CoffeeScript_  
-
 Shows a new random Kanji on your desktop everyday including it's ID, meaning and reading.
-
 The Kanji list in *kanji.txt* was compiled from the following list:
-
 <https://en.wikipedia.org/wiki/List_of_j%C5%8Dy%C5%8D_kanji>
 
 ## Customization
@@ -35,5 +32,4 @@ The current version lists ID, the kanji and it's meaning. The japanese reading c
 
 ## Bug Fixes
 
-This widget hasn't been tested extensively, but I'll try and keep it maintained. Email bug fixes to the email located in the JSON file. If you find any mistakes within the kanji.txt file or incorrect meanings/readings please let me know (getting 2000 correct isn't easy).
-
+This widget hasn't been tested extensively, but I'll try and keep it maintained. Email bug fixes to the email located in the JSON file. If you find any mistakes within the kanji.txt file or incorrect meanings/readings please let me know.
