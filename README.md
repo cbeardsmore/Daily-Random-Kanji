@@ -30,7 +30,7 @@ The range of Kanji displayed can be modified by altering the numeric value after
 
 </center>
 
-The current version lists ID, the kanji and it's meaning. The japanese reading can be added by adding a new *div* to both the *render* and *update* methods
+The current version lists ID, the kanji and it's meaning. The japanese reading can be added by adding a new *div* to both the *render* and *update* methods. Make sure the command is showing the correct file path, depending on how your files are arranged.
 
 
 ## Bug Fixes

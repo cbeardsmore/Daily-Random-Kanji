@@ -1,5 +1,5 @@
 # Author: Connor Beardsmore <connor.beardsmore@gmail.com>
-# Last Modified: 14/07/16
+# Last Modified: 24/03/18
 
 # Change the number after RANDOM to choose which kanji level you want:
 # GRADE 1 = 81
@@ -11,7 +11,7 @@
 # SECONDARY/ALL = 2139
 
 command:
-    " sed -n \"$((RANDOM%2139))p\" \"./Daily-Random-Kanji/Daily-Random-Kanji.widget/kanji.txt\" "
+    " sed -n \"$((RANDOM%2139))p\" \"./Daily-Random-Kanji.widget/kanji.txt\" "
 
 # Update is called daily
 refreshFrequency: "1d"
@@ -30,7 +30,6 @@ style: """
         color white
         font-weight: bold
         text-align center
-        /* PADDING BETWEEN DIV'S */
         margin-top: -10px
 
     #smalltext
@@ -47,35 +46,19 @@ style: """
 
 # Initial render
 render: (output) ->
-    field = output.split(" ");
-    id = field[0];
-    kanji = field[1];
-    meaning = field[2];
-    reading = field[3];
+    fields = output.split(" ");
     """
-    <div id="smalltext"> #{id} </div>
-    <div id="kanji"> #{kanji} </div>
-    <div id="largetext"> #{meaning} </div>
+    <div id="smalltext"> #{fields[0]} </div>
+    <div id="kanji"> #{fields[1]} </div>
+    <div id="largetext"> #{fields[2]} </div>
     """
-
-    # Add the following div lines as required for whatever info you want:
-    # <div id="smalltext"> #{id} </div>
-    # <div id="largetext"> #{reading} </div>
 
 # Update when refresh occurs
 update: (output, domEl) ->
-    field = output.split(" ");
-    id = field[0];
-    kanji = field[1];
-    meaning = field[2];
-    reading = field[3];
+    fields = output.split(" ");
     $(domEl).empty();
     $(domEl).append("""
-    <div id="smalltext"> #{id} </div>
-    <div id="kanji"> #{kanji} </div>
-    <div id="largetext"> #{meaning} </div>
+    <div id="smalltext"> #{fields[0]} </div>
+    <div id="kanji"> #{fields[1]} </div>
+    <div id="largetext"> #{fields[2]} </div>
     """);
-
-    # Add the following div lines as required for whatever info you want:
-    # <div id="smalltext"> #{id} </div>
-    # <div id="largetext"> #{reading} </div>
